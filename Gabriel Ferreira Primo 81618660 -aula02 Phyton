@@ -1,0 +1,878 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Vinicius - Aula02 Python",
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "ipython",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.6.4"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Lo11gVUOvot3",
+        "colab_type": "text"
+      },
+      "source": [
+        "![logo_usjt.png](https://www.usjt.br/app/themes/mobister/dist/images/sao-judas-universidade.png)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uQ8QexB9vot6",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Paradigmas de Linguagens de Programação\n",
+        ""
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7j5zT3f1vot8",
+        "colab_type": "text"
+      },
+      "source": [
+        "# Atividade02 - Python Básico - Estruturas de Dados\n",
+        "\n",
+        "**Conteúdo:**\n",
+        "- Listas\n",
+        "- Dicionários \n",
+        "- Tuplas\n",
+        "- Sets"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gJ06KvkAvot-",
+        "colab_type": "text"
+      },
+      "source": [
+        "## Autor\n",
+        "- **Aluno:**\n",
+        "\n",
+        "Obs: as tarefas devem ser individuais."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1Y_RgktGvouB",
+        "colab_type": "text"
+      },
+      "source": [
+        "## Exercícios"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "fJ4QlX4av33E",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "T4CebwBLvouD",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 1 Escreva um programa que some todos os itens da lista:\n",
+        "`[1,2,3,4,5,6,7,8,9,10]`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "h9sz6h3VvouG",
+        "colab_type": "code",
+        "outputId": "5a857de9-0eb0-43c9-b712-b1f828175834",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "lists = [1,2,3,4,5,6,7,8,9,10]\n",
+        "soma = 0\n",
+        "for list in lists:\n",
+        "    soma += list\n",
+        "print(soma)\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "55\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "5uj2Vm7lvouM",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 2 Escreva um programa que some todos os valores do dicionário:\n",
+        "`{'a':1, 'b':2, 'c':3, 'd':4, 'e':5, 'f':6, 'g':7, 'h':8, 'i':9, 'j':10}`."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "UmsZ54y7xWu6",
+        "colab_type": "text"
+      },
+      "source": [
+        ""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rCeaSY9nvouP",
+        "colab_type": "code",
+        "outputId": "01aa459d-2b10-45bd-873d-5f06b2021845",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "lists = {'a':1, 'b':2, 'c':3, 'd':4, 'e':5, 'f':6, 'g':7, 'h':8, 'i':9, 'j':10}\n",
+        "\n",
+        "print(sum(lists.values()))\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "55\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "X0zg3RJcvouW",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 3 Escreva um programa que some todos os itens da tupla:\n",
+        "`(1,2,3,4,5,6,7,8,9,10)`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "AyEzz1rNvouY",
+        "colab_type": "code",
+        "outputId": "95c3156b-dcd4-48fb-f12a-51ac4578cb04",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "t=(1,2,3,4,5,6,7,8,9,10)\n",
+        "print(sum(t))"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "55\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "AAtwHClGvouf",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 4 Crie um programa que recebe uma lista de números e\n",
+        "- retorne o maior elemento\n",
+        "- retorne a soma dos elementos\n",
+        "- retorne o número de ocorrências do primeiro elemento da lista\n",
+        "- retorne a média dos elementos\n",
+        "- retorne a mediana dos elementos (procure mediana na Wikipedia)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "IGM5MLnMvoug",
+        "colab_type": "code",
+        "outputId": "bcb6a16c-c5dc-481e-ca76-98b62461dd8d",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 102
+        }
+      },
+      "source": [
+        "import statistics\n",
+        "\n",
+        "lists = [1,2,3,4,5,6,7,8,9,10]\n",
+        "print(max(lists))\n",
+        "print(sum(lists))\n",
+        "print(lists.count(1))\n",
+        "print(sum(lists)/2)\n",
+        "print(statistics.median(lists))"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "10\n",
+            "55\n",
+            "1\n",
+            "27.5\n",
+            "5.5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "-TTsV_qXvoun",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 5 Escreva um programa que lê duas notas de 5 alunos e armazena tais notas em um dicionário, onde a chave é o nome do aluno.  Depois o programa deve retornar a média do aluno, dado seu nome."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "PmPoceCQvous",
+        "colab_type": "code",
+        "outputId": "d6b2fb98-cd73-4ad9-ce6e-5636c95b846c",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "lists = {'joao':[2, 3], 'paulo':[5, 3], 'vinicius':[10, 15], 'tony':[10, 9], 'maju':[10, 4]}\n",
+        "print(sum(lists['joao'])/2)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "2.5\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "REPbBUXovou0",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 6 Escreva um programa para armazenar uma agenda de telefones em um dicionário. Cada pessoa pode ter um ou mais telefones e a chave do dicionário é o nome da pessoa. Seu programa deve ter as seguintes funcionalidades:\n",
+        "- incluirNovoNome – essa função acrescenta um novo nome na agenda, com um ou mais telefones. Ela deve receber como argumentos o nome e os telefones.\n",
+        "- incluirTelefone – essa função acrescenta um telefone em um nome existente na agenda. Caso o nome não exista na agenda, você̂ deve perguntar se a pessoa deseja inclui-lo. Caso a resposta seja afirmativa, use a função anterior para incluir o novo nome.\n",
+        "- excluirTelefone – essa função exclui um telefone de uma pessoa que já está na agenda. Se a pessoa tiver apenas um telefone, ela deve ser excluída da agenda.\n",
+        "- excluirNome – essa função exclui uma pessoa da agenda.\n",
+        "- consultarTelefone – essa função retorna os telefones de uma pessoa na agenda.\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "2hxRH1yHvou1",
+        "colab_type": "code",
+        "outputId": "b4562d12-fd1b-4f3d-8068-126400dbd543",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 527
+        }
+      },
+      "source": [
+        "dic={}\n",
+        "def incluirNovoNome(nome,telefones):\n",
+        "  global dic\n",
+        "  dic[nome]=telefones\n",
+        "\n",
+        "def incluirTelefone(nome,telefone):\n",
+        "  global dic\n",
+        "  if nome in dic.keys():\n",
+        "    dic[nome].append(telefone)\n",
+        "  else:\n",
+        "    a=int(input('o nome não esta na lista, quer adicionar?(1=Sim,0=Não)'))\n",
+        "    if a == 1:\n",
+        "       incluirNovoNome(nome,telefones)\n",
+        "    else:\n",
+        "      print('Adeus')\n",
+        "\n",
+        "def excluirTelefone(nome,telefone):\n",
+        "  global dic\n",
+        "  if nome in dic.keys():\n",
+        "    if len(dic[nome])==1:\n",
+        "      del dic[nome]\n",
+        "    else:\n",
+        "       for num in range(0, len(dic[nome]) - 1):\n",
+        "         if telefone == dic[nome][num]:\n",
+        "           dic[nome].pop(num)\n",
+        "\n",
+        "def excluirNome(nome):\n",
+        "  global dic\n",
+        "  if nome in dic.keys():\n",
+        "    del dic[nome]\n",
+        "\n",
+        "def consultarTelefone(nome):\n",
+        "  global dic\n",
+        "  if nome in dic.keys():\n",
+        "    print(dic[nome])\n",
+        "\n",
+        "menu = -1\n",
+        "while menu != 0:\n",
+        "  menu=int(input('Digite um numero para ir na função especifica:\\n1-Novo Contato\\n2- Novo Telefone\\n3- Excluir Telefone\\n4- Excluir Pessoa\\n5- Consultar Telefone \\n0-Sair\\n'))\n",
+        "  if menu == 1:\n",
+        "    nome = input(\"Insira o nome da pessoa:\")\n",
+        "    telefones = []\n",
+        "    telefones.append(int(input(\"Insira um telefone da pessoa: \")))\n",
+        "    telefone = -1\n",
+        "    while telefone != 0:\n",
+        "      telefone = int(input(\"Inserir outro telefone (ou digite 0 para parar): \"))\n",
+        "    if telefone != 0:\n",
+        "      telefones.append(telefone)\n",
+        "    incluirNovoNome(nome, telefones)\n",
+        "\n",
+        "  elif menu == 2:\n",
+        "            nome = input(\"Insira o nome da pessoa: \")\n",
+        "            telefone = int(input(\"Insira um novo telefone da pessoa:\" )),\n",
+        "            incluirTelefone(nome, telefone)\n",
+        "\n",
+        "  elif menu == 3:\n",
+        "            nome = input(\"Insira o nome da pessoa: \")\n",
+        "            telefone = int(input(\"Insira o telefone da pessoa a qual deseja excluir:\"))\n",
+        "            excluirTelefone(nome, telefone)\n",
+        "\n",
+        "  elif menu == 4:\n",
+        "            excluirNome(input(\"Insira o nome da pessoa:\"))\n",
+        "\n",
+        "  elif menu == 5:\n",
+        "            consultarTelefone(input(\"Insira o nome da pessoa:\"))"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m    729\u001b[0m             \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 730\u001b[0;31m                 \u001b[0mident\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mreply\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msession\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrecv\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstdin_socket\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m0\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    731\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/jupyter_client/session.py\u001b[0m in \u001b[0;36mrecv\u001b[0;34m(self, socket, mode, content, copy)\u001b[0m\n\u001b[1;32m    802\u001b[0m         \u001b[0;32mtry\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 803\u001b[0;31m             \u001b[0mmsg_list\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0msocket\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrecv_multipart\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmode\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mcopy\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mcopy\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    804\u001b[0m         \u001b[0;32mexcept\u001b[0m \u001b[0mzmq\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mZMQError\u001b[0m \u001b[0;32mas\u001b[0m \u001b[0me\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/zmq/sugar/socket.py\u001b[0m in \u001b[0;36mrecv_multipart\u001b[0;34m(self, flags, copy, track)\u001b[0m\n\u001b[1;32m    465\u001b[0m         \"\"\"\n\u001b[0;32m--> 466\u001b[0;31m         \u001b[0mparts\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m[\u001b[0m\u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mrecv\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mflags\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mcopy\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mcopy\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mtrack\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mtrack\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    467\u001b[0m         \u001b[0;31m# have first part already, only loop while more to receive\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32mzmq/backend/cython/socket.pyx\u001b[0m in \u001b[0;36mzmq.backend.cython.socket.Socket.recv\u001b[0;34m()\u001b[0m\n",
+            "\u001b[0;32mzmq/backend/cython/socket.pyx\u001b[0m in \u001b[0;36mzmq.backend.cython.socket.Socket.recv\u001b[0;34m()\u001b[0m\n",
+            "\u001b[0;32mzmq/backend/cython/socket.pyx\u001b[0m in \u001b[0;36mzmq.backend.cython.socket._recv_copy\u001b[0;34m()\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/zmq/backend/cython/checkrc.pxd\u001b[0m in \u001b[0;36mzmq.backend.cython.checkrc._check_rc\u001b[0;34m()\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: ",
+            "\nDuring handling of the above exception, another exception occurred:\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-151-18ddb6ac8c76>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     37\u001b[0m \u001b[0mmenu\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m-\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     38\u001b[0m \u001b[0;32mwhile\u001b[0m \u001b[0mmenu\u001b[0m \u001b[0;34m!=\u001b[0m \u001b[0;36m0\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 39\u001b[0;31m   \u001b[0mmenu\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'Digite um numero para ir na função especifica:\\n1-Novo Contato\\n2- Novo Telefone\\n3- Excluir Telefone\\n4- Excluir Pessoa\\n5- Consultar Telefone \\n0-Sair\\n'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     40\u001b[0m   \u001b[0;32mif\u001b[0m \u001b[0mmenu\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     41\u001b[0m     \u001b[0mnome\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Insira o nome da pessoa:\"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m    703\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    704\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_header\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 705\u001b[0;31m             \u001b[0mpassword\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mFalse\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    706\u001b[0m         )\n\u001b[1;32m    707\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.6/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m    733\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    734\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 735\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    736\u001b[0m             \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    737\u001b[0m                 \u001b[0;32mbreak\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "cSBM3EWjvou4",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 7 Faça um dicionário que armazene os nomes dos estados da região sudeste, sua população, sua capital e seu PIB (procure na Wikipedia). Use a sigla do estado como chave. Depois imprima (com print) uma lista com a sigla e os demais dados ordenados por ordem alfabética de sigla."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TnykG5SRvou5",
+        "colab_type": "code",
+        "outputId": "32e9bec0-75f0-4f01-8923-555f402aee76",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        }
+      },
+      "source": [
+        "dic_estados={'SP':['São Paulo','45919049 hab','São Paulo','R$ 2.222.500 trilhões'],'ES':['Espírito Santo',    '4016356 hab','Vitória','R$ 113.352 bilhões'],'MG':['Minas Gerais','21119536 hab','Belo Horizonte','R$ 576,199 bilhões'],'RJ':['Rio de Janeiro','16718956 hab','Rio de Janeiro','R$ 671,362 bilhões']}\n",
+        "list_estados=[]\n",
+        "list_estados=sorted(dic_estados.items())\n",
+        "print(list_estados)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[('ES', ['Espírito Santo', '4016356 hab', 'Vitória', 'R$ 113.352 bilhões']), ('MG', ['Minas Gerais', '21119536 hab', 'Belo Horizonte', 'R$ 576,199 bilhões']), ('RJ', ['Rio de Janeiro', '16718956 hab', 'Rio de Janeiro', 'R$ 671,362 bilhões']), ('SP', ['São Paulo', '45919049 hab', 'São Paulo', 'R$ 2.222.500 trilhões'])]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "m7s8cDo0vou8",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 8 Retorne um conjunto de elementos que estão em A ou B, mas não em ambos:\n",
+        "- `A = {10, 20, 30, 40, 50}`\n",
+        "- `B = {30, 40, 50, 60, 70}`"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "v0dv97GSvou9",
+        "colab_type": "code",
+        "outputId": "56c41f1d-b725-46bf-f441-57b73141e4af",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "A = {10, 20, 30, 40, 50}\n",
+        "B = {30, 40, 50, 60, 70}\n",
+        "Bnew = A.difference(B)\n",
+        "Anew = B.difference(A)\n",
+        "print(Anew.union(Bnew))"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{10, 60, 20, 70}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1jZl5nV3vovA",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 9 Considere a lista `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`. Crie outra lista com a raiz quadrada de cada elemento da lista dada. Sugestão: use list comprehension."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "pHOWSkDKvovB",
+        "colab_type": "code",
+        "outputId": "65b826ae-11a2-4e5e-d9ae-ed9810dd49bf",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\n",
+        "[i**2 for i in list]\n",
+        "9"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "9"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 92
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "uQdTa1csvovG",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 10 Considere a string `\"Mike; ;Emma;Kelly; ;Brad;Zed\"`. Imprima, com print, outra string com os mesmos nomes, em ordem alfabética decrescente, sem os nomes em branco e com os nomes separados por tab (`\\t`)."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "PyM45ERuvovH",
+        "colab_type": "code",
+        "outputId": "e17d3158-74d6-4566-e204-d8f38ec83471",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "string = \"Mike; ;Emma;Kelly; ;Brad;Zed\"\n",
+        "b = \";\"\n",
+        "for i in range(0,len(b)):\n",
+        "  string =string.replace(b[i],\" \")\n",
+        "\n",
+        "listanome = string.split()\n",
+        "listanome.sort(reverse=True)\n",
+        "ordem = str(listanome)\n",
+        "b = \",[]\"\n",
+        "\n",
+        "for i in range(0,len(b)):\n",
+        "  ordem =ordem.replace(b[i],\"\\t\")\n",
+        "\n",
+        "\n",
+        "print(ordem)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "\t'Zed'\t 'Mike'\t 'Kelly'\t 'Emma'\t 'Brad'\t\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6huQ5M9IvovK",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 11 Troque o valor `20` pelo valor `25` da tupla `(\"Laranja\", [10, 20, 30], {1:5, 3:15,'728':25})`. Depois troque o valor `[10, 25, 30]` pelo valor `'Laranja'`. Deixe o código que causa erro comentado."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "PMIW_CruvovL",
+        "colab_type": "code",
+        "outputId": "57fff9cf-e398-4d3e-93c1-43d089c23553",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "tupla = (\"Laranja\", [10, 20, 30], {1:5, 3:15,'728':25})\n",
+        "tupla[1][1] = 25\n",
+        "print(tupla)\n",
+        "#'tuple' object does not support item assignment\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "('Laranja', [10, 25, 30], {1: 5, 3: 15, '728': 25})\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YWavbVmWvovO",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 12 Leet é uma forma de se escrever o alfabeto latino usando outros símbolos em lugar das letras, como números por exemplo. A própria palavra leet admite muitas variações, como l33t ou 1337. O uso do leet reflete uma subcultura relacionada ao mundo dos jogos de computador e internet, sendo muito usada para confundir os iniciantes e afirmar-se como parte de um grupo. Pesquise sobre as principais formas de traduzir as letras. Depois, faça um programa que peça uma texto e transforme-o para a grafia leet speak.\n",
+        "Desafio: não use loops nem desvios condicionais.\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LkU0-mOWvovP",
+        "colab_type": "code",
+        "outputId": "b1bf44f0-ed8e-4c35-c18d-dceeb2da6e98",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        }
+      },
+      "source": [
+        "frase = input(\"Digite uma frase:\")\n",
+        "frase = frase.replace(\"a\", \"4\")\n",
+        "frase = frase.replace(\"b\", \"6\")\n",
+        "frase = frase.replace(\"c\", \"(\")\n",
+        "frase = frase.replace(\"d\", \"[)\")\n",
+        "frase = frase.replace(\"e\", \"&\")\n",
+        "frase = frase.replace(\"f\", \"]]=\")\n",
+        "frase = frase.replace(\"g\", \"&\")\n",
+        "frase = frase.replace(\"h\", \"#\")\n",
+        "frase = frase.replace(\"i\", \"!\")\n",
+        "frase = frase.replace(\"j\", \",|\")\n",
+        "frase = frase.replace(\"k\", \"]{\")\n",
+        "frase = frase.replace(\"l\", \"#\")\n",
+        "frase = frase.replace(\"m\", \"(\\/)\")\n",
+        "frase = frase.replace(\"n\", \"(\\)\")\n",
+        "frase = frase.replace(\"o\", \"()\")\n",
+        "frase = frase.replace(\"p\", \"[]D\")\n",
+        "frase = frase.replace(\"q\", \"(,)\")\n",
+        "frase = frase.replace(\"r\", \"1²\")\n",
+        "frase = frase.replace(\"s\", \"$\")\n",
+        "frase = frase.replace(\"t\", \"\\']\\'\")\n",
+        "frase = frase.replace(\"u\", \"(_)\")\n",
+        "frase = frase.replace(\"v\", \"\\/\")\n",
+        "frase = frase.replace(\"w\", \"\\'//\")\n",
+        "frase = frase.replace(\"x\", \"%\")\n",
+        "frase = frase.replace(\"y\", \"\\'/\")\n",
+        "frase = frase.replace('z', \"\\\"/\")\n",
+        "\n",
+        "\n",
+        "\n",
+        "print (frase)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Digite uma frase:vinicius\n",
+            "\\/!(\\)!(!(_)$\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "B__Vr-ahvovS",
+        "colab_type": "text"
+      },
+      "source": [
+        "#### 13 Considere o dicionário abaixo. Crie outro dicionário a partir deste tomando o valor como chave e a chave como valor:\n",
+        "`{'a':1, 'b':2, 'c':3, 'd':4, 'e':5, 'f':6, 'g':7, 'h':8, 'i':9, 'j':10}`"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "o2GzorQIvovS",
+        "colab_type": "code",
+        "outputId": "964f2834-2e47-42e5-d8c3-2152d1b5279e",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "dic = {'a':1, 'b':2, 'c':3, 'd':4, 'e':5, 'f':6, 'g':7, 'h':8, 'i':9, 'j':10}\n",
+        "dix = {}\n",
+        "for d in dic:\n",
+        "  dix[dic[d]] = d\n",
+        "print(dix)"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "{1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h', 9: 'i', 10: 'j'}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "fbAb4EZbvovV",
+        "colab_type": "text"
+      },
+      "source": [
+        "##### 14 Uma pista de Kart permite 10 voltas para cada um de 6 corredores. Escreva um programa que leia todos os tempos em segundos e os guarde em um dicionário, onde a chave é o nome do corredor. Ao final diga de quem foi a melhor volta da prova e em que volta; e ainda a classificação final em ordem (1o o campeão). O campeão é o que tem a menor média de tempos."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wDtoWBANvovY",
+        "colab_type": "code",
+        "outputId": "5aa7c9ca-64a1-48eb-cd1e-7ef35be1b490",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 119
+        }
+      },
+      "source": [
+        "import operator\n",
+        "\n",
+        "dic = {\n",
+        "    \"INGRID\": [57, 58, 60, 56, 64, 70, 59, 58, 69, 55],\n",
+        "    \"ANA\": [56, 60, 72, 50, 67, 58, 61, 63, 62, 59],\n",
+        "    \"DENISE\": [79, 52, 58, 48, 58, 59, 61, 65, 59, 60],\n",
+        "    \"GUILHERME\": [56, 50, 55, 70, 85, 73, 68, 65, 56, 60],\n",
+        "    \"ANDREY\": [69, 55, 67, 50, 52, 53, 70, 75, 65, 56],\n",
+        "    \"JOEL\": [56, 63, 63, 65, 70, 59, 55, 60, 63, 62]\n",
+        "}\n",
+        "\n",
+        "volta = 0\n",
+        "medias = dic\n",
+        "nome = \"\"\n",
+        "melhorVolta = dic[\"INGRID\"][0]\n",
+        "for chave in dic:\n",
+        "    soma = 0\n",
+        "    for num in dic[chave]:\n",
+        "        if num < melhorVolta:\n",
+        "            melhorVolta = num\n",
+        "            nome = chave\n",
+        "        soma += num\n",
+        "    medias[chave] = soma / 10\n",
+        "\n",
+        "#itemgeter 1 é a pos do valor do medias.items()\n",
+        "sort = sorted(medias.items(), key=operator.itemgetter(1))\n",
+        "for i in range(0, 6):\n",
+        "    print(\"%s° lugar: %s - %s segs.\" % (i + 1, sort[i][0], sort[i][1]))"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "1° lugar: DENISE - 59.9 segs.\n",
+            "2° lugar: INGRID - 60.6 segs.\n",
+            "3° lugar: ANA - 60.8 segs.\n",
+            "4° lugar: ANDREY - 61.2 segs.\n",
+            "5° lugar: JOEL - 61.6 segs.\n",
+            "6° lugar: GUILHERME - 63.8 segs.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "zzA-QH4xvovb",
+        "colab_type": "text"
+      },
+      "source": [
+        "##### 15 *Blocos de ações.* Um bloco de ações é representado como um certo número de atributos, incluindo uma data de compra, um preço de compra, um número de ações e um símbolo de cotação. Podemos registrar essas informações em uma tupla para cada bloco de estoque e realizar várias operações simples nos blocos.\n",
+        "\n",
+        "Vamos sonhar que temos o seguinte portfólio.\n",
+        "\n",
+        "<table>\n",
+        "    <tr><th>Data da Compra</th><th>Preço de Compra</th><th>Ações</th><th>Símbolo</th><th>Preço Atual</th></tr>\n",
+        "<tr><td>26 Jan 2015</td><td> 43.50</td><td> 25</td><td> CAT</td><td> 92.45</td><tr>\n",
+        "<tr><td>26 Jan 2015</td><td> 42.80</td><td> 50</td><td> DD</td><td> 51.19</td><tr>\n",
+        "<tr><td>26 Jan 2015</td><td> 42.10</td><td> 75</td><td> EK</td><td> 34.87</td><tr>\n",
+        "<tr><td>26 Jan 2015</td><td> 37.58</td><td> 100</td><td> GM</td><td> 37.58</td><tr>\n",
+        "</table>\n",
+        "Podemos representar cada bloco de ações como uma tupla de cinco com data de compra, preço de compra, ações, símbolo e preço atual.\n",
+        "\n",
+        "`portfolio = [\n",
+        "(\"26-Jan-2015\", 43.50, 25, 'CAT', 92.45),\n",
+        "(\"26-Jan-2015\", 42.80, 50, 'DD', 51.19),\n",
+        "(\"26-Jan-2015\", 42.10, 75, 'EK', 34.87),\n",
+        "(\"26-Jan-2015\", 37.58, 100, 'GM', 37.58)\n",
+        "]`\n",
+        "\n",
+        "Desenvolva um programa que examine cada bloco, multiplique ações pelo preço de compra e determine o preço total de compra do portfólio. E, depois, examine cada bloco, multiplique ações pelo preço de compra e ações pelo preço atual para determinar o valor total ganho ou perdido."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wE3GzHYFvovc",
+        "colab_type": "code",
+        "outputId": "c0751a9f-4421-4919-e928-633dff056496",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        }
+      },
+      "source": [
+        "portifolio = [ (\"26-Jan-2015\", 43.50, 25, 'CAT', 92.45), (\"26-Jan-2015\", 42.80, 50, 'DD', 51.19), (\"26-Jan-2015\", 42.10, 75, 'EK', 34.87), (\"26-Jan-2015\", 37.58, 100, 'GM', 37.58) ]\n",
+        "list =[]\n",
+        "for x in portifolio:\n",
+        "  y = float( x[4] - x[1])\n",
+        "  k = float( y * x[2])\n",
+        "  list.append({x[3]: k})\n",
+        "print(list)\n"
+      ],
+      "execution_count": 0,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[{'CAT': 1223.75}, {'DD': 419.5}, {'EK': -542.2500000000003}, {'GM': 0.0}]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
